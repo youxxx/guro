@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일시트</title>
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+    <style> 
+        body {  height: 10000px;
+       
+        }
+
+        #box1 {
+            position: relative;
+            float: left;
+            width: 150px;
+            height: 150px;
+            background: blue;
+        }
+
+        #box2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+
+        #box3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+
+        #box4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+
+        #circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background: red;
+            position: fixed;
+            bottom: 100px;
+            right: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+    <div id="circle"></div>
+</body>
+</html>

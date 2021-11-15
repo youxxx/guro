@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일시트</title>
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+    <style> 
+        body {
+            margin: 0;
+        }
+        #wrapper {
+            width: 1200px;
+            height: 800px;
+            background: red;
+            margin: 0 30px 10px;
+        }
+
+        h1 {
+            font-size: 200px;
+            color: black;
+            text-align: center;
+        }
+        @media(min-width: 1200px) {
+            #wrapper {
+             background: blue;
+
+            }
+
+            h1 {
+                color: yellow;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="wrapper">
+    <!-- container wrap -->
+    <h1>HTML</h1>
+ 
+    </div>
+</body>
+</html>

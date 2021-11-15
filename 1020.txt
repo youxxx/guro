@@ -1,0 +1,75 @@
+0 1 2 3 4 5 6 7 8 9 a b c d e f =16진수
+
+<textarea name></textarea name> 닫는테그는 끝에 연달아서 치기
+안 그럼 에러 남..
+
+
+★<required  placeholder > 유효성 검사★ 외우기
+
+시스템폰트 : OS 윈도우11 맥OS 리눅스
+설치함과 동시에 자동으로 해당 OS에 설치되어지는 폰트의 형태
+
+웹폰트: 자신의 시스템에 해당 폰트가 없는데도 불구하고 일정폰트로
+해당 사이트의 폰트가 보여지게 하는 기술
+
+    <style>
+        p {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+    </style>
+    <title>폼태그</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+
+구글웹폰트에서 폰트 입히기
+
+SVG 이미지 파일포맷
+Scalable Vactor Graphics (벡터 형태의 이미지파일포맷)
+
+시맨틱태그(semantic)
+>>의미가 통하는, 의미가 부여되는 
+
+1.<header></header> 이런 형태의 태그임. 머리
+2.nav 메뉴
+3.footer 다리
+4.aside 오른쪽 혹은 왼쪽 끝부분
+5.address 주소 > 웹표준에서는 주소만 적게되어있음.
+6.section 내용 : 저작권이 있다
+7.article 기사 : 저작권이 없다
+
+# > 아이디를 뜻함
+
+
+ <img src="001.png" usemap="#bbkjh"alt="" width="500" height="700">
+    <map name="bbkjh" id="bbkjh">
+        <area shape="rect" coords="60,60,500,20,520,720,20,720" href="http://www.apple.com" alt="">
+
+    </map>
+
+Casscading Style Sheet
+
+적는 규칙
+
+1. 무조건 소문자로 적는다
+2. 속성:속성값;으로 마무리한다.
+3. {}로 감싸고 속성과 속성값을 준다.
+4. 줄맞춤을 깔끔하게 한다. 
+
+      ★ a:link {
+            color: black;
+            text-decoration: none;
+        } 
+
+       ★ a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+      ★  a:hover {
+            color: red;
+           text-decoration: line-through (취소선) 
+        }
+
+       ★ a:active {
+            color: yellow;
+        }

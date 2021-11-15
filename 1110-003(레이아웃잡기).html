@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+         #wrapper {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+            header {
+            height: 100px;
+            background: rgb(92, 148, 185)
+        }
+
+            ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            nav {
+            margin-top: 30px;
+            float: right;
+        }
+
+            header:after {
+            clear: both;
+        }
+
+            ul li {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin: 20px;
+            text-align: center;
+            color: white;
+        }
+
+            .box1, .box2, .box3 {
+            border: 1px dotted black;
+            float: left;
+            margin: 10px;
+            padding: 0px;
+            width: 350px;
+            height: 600px;
+            font-size: 13px;
+        }
+
+           footer {
+            clear: both;
+            height: 100px;
+            background: rgb(124, 142, 0);
+            padding-top: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>애완견 종류</li>
+                    <li>입양하기</li>
+                    <li>건강돌보기</li>
+                    <li>더불어살기</li>
+                </ul>
+            </nav>
+        </header>
+        <h1>애완견 종류</h1>
+
+        <div class="box1">
+            <h2>활달한 강아지</h2>
+            <dl>
+                <dt>요크셔 테리어</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum aliquid libero harum cupiditate? Sequi quaerat tenetur illo ipsa! Totam porro placeat similique quasi odit, sint optio esse fugit ratione doloremque?</dd>
+            <dl>
+                <dt>말티드</dt>
+                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, accusamus? Nostrum rerum sit vitae nobis, corrupti dignissimos earum maxime quam magnam quae minima ullam? Cumque delectus similique dignissimos velit tempore.</dd>
+            </dl>
+                <dt>포메리안</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, in! Inventore temporibus id laudantium nam magni molestias obcaecati, voluptatum nobis a unde ex, voluptatem maxime tempore laboriosam ab nostrum quis.</dd>
+            </dl>
+        </div>
+        <div class="box2">
+            <h2>온순한 강아지</h2>
+            <dl>
+                <dt>씨츄</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas, perferendis quasi sunt rem atque hic suscipit, incidunt quidem quaerat harum voluptatum a. Consequatur numquam, tenetur sed necessitatibus accusamus ex.</dd>
+            </dl>
+            <dl>
+                <dt>퍼그</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint numquam pariatur sequi impedit eum quo deserunt, nostrum vero voluptate, id consectetur tenetur dolorum ullam quidem rerum animi. Explicabo, molestias deleniti.</dd>
+            </dl>
+            <dl>
+                <dt>래브라도 리트리버</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, aliquam aperiam dolorem facilis mollitia totam maiores, reprehenderit iusto quam eveniet, placeat nulla asperiores quidem. Quidem temporibus deserunt recusandae fugit tenetur.</dd>
+            </dl>
+        </div>    
+        <div class="box3">
+            <h2>사납지만 복종적인 강아지</h2>
+            <dl>
+                <dt>요크셔 테리어</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum aliquid libero harum cupiditate? Sequi quaerat tenetur illo ipsa! Totam porro placeat similique quasi odit, sint optio esse fugit ratione doloremque?</dd>
+            <dl>
+                <dt>말티드</dt>
+                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, accusamus? Nostrum rerum sit vitae nobis, corrupti dignissimos earum maxime quam magnam quae minima ullam? Cumque delectus similique dignissimos velit tempore.</dd>
+            </dl>
+                <dt>포메리안</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, in! Inventore temporibus id laudantium nam magni molestias obcaecati, voluptatum nobis a unde ex, voluptatem maxime tempore laboriosam ab nostrum quis.</dd>
+            </dl>
+
+        </div>
+        <footer>
+            <ul>건강한 강아지는
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+탑버튼 예제   
+
+transform: translate(-50%, -50%);
+                            x축    y축 
+
+가운데로 정렬시킬 수 있는 실무 테크닉 
+=height: 30px;
+line-height: 30px;
+이렇게 실무에서 많이 함. 수직에서의 정렬 가운데값.
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+    <style>
+
+        body, html {
+            scroll-behavior: smooth;
+            height: 10000px;
+        }
+
+        p {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid dodgerblue;
+            position: fixed;
+            right: 20%;
+            bottom: 15%;
+
+        }
+
+        .cls001 {
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+
+        p {
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <p> 
+        <a href="#">
+        <i class="fas fa-arrow-circle-up cls001"></i><br>
+        <span>TOP</span>
+    </a>
+    </p>
+</body>
+</html>
+
+
+
+풀비디오 배경화면
+
+            min-width: 100%;
+            min-height: 100%;
+이게 먹히려면      position: fixed; 요 속성이 들어가야 함.
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀비디오 배경화면</title>
+</head>
+<body>
+    <video src="[MV] Taylor Swift-Shake It Off.mp4" autoplay muted></video>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+            margin: 0;
+        }
+
+        #bbkjh001 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: darkcyan;
+            height: 80px;
+        }
+
+        #bbkjh002 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80px;
+            background: darkcyan;
+            height: 100px;
+        }
+        
+        #bbkjh003 {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: darkcyan;
+            height: 80px;
+        }
+
+        #bbkjh004 {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            background: darkcyan;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bbkjh001"></div>
+    <div id="bbkjh002"></div>
+    <div id="bbkjh003"></div>
+    <div id="bbkjh004"></div>
+</body>
+</html>
+
+
+background: contain; 이미지를 늘리면 꽉찬 화면으로 보이지 않음, 
+포토샵에서 쉬프트 누르고 이미지 늘리는 것 처럼
+background: cover; 화면을 꽉차게 만들지만 아랫 부분을 짤라서 보여짐. 
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀비디오 배경화면</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #bbkjh001 {
+            position: fixed;
+            background: url(thumb_l_53484E3A2CFCADB2830F6365C0D00982.jpg) no-repeat;
+            background-size: cover; 
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="bbkjh001"></div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        body {
+            margin: 0
+        }
+
+        #wrapper {
+            width: 1200px;
+            height: 800px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 60px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 1000px;
+            height: 400px;        
+            margin: 0 auto;    
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+        
+        tr:nth-child(2n+1) {
+            background: #eee;
+        }
+
+
+        tr:first-child {
+            background: darkturquoise;
+        }
+
+        tr:last-child {
+            background: darkturquoise;
+        }
+        
+        tr {
+            height: 40px;
+        }
+
+        #bbkjh001 {
+            width: 100px;
+        }
+
+        #bbkjh002 {
+            width: 650px;
+        }
+
+        #bbkjh003 {
+            width: 125px;
+        }
+
+        #bbkjh004 {
+            width: 125px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀이미지 배경화면</title>
+</head>
+<body>
+    <div id="wrapper">
+        <table>
+            <tr>
+                <th id="bbkjh001">번호</th>
+                <th id="bbkjh002">제목</th>
+                <th id="bbkjh003">글쓴이</th>
+                <th id="bbkjh004">조회수</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+레이아웃 잡는법 소스 외우기;
+
+footer {
+   clear: both;
+

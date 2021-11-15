@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENEW</title>
+    <style>
+        .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 > li {
+            width: 150px;
+            float: left;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            background: #ddd;
+        }
+
+        .cls001 li ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 li ul li {
+            width: 150px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            background: #ccc;
+            border-bottom: 1px solid black;
+            display: none;
+        }
+
+        .cls001 li:hover ul li {
+            display: block;
+            transition: 2s;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none; 
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML
+            <ul>
+                <li><a href="#">스타일</a></li>
+                <li><a href="#">웹표준</a></li>
+                <li><a href="#">마크업</a></li>
+            </ul>
+        </li>
+    </ul>    
+</body>
+</html>

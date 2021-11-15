@@ -1,0 +1,167 @@
+1.디스플레이
+2.포지션
+3.가상요소
+4.float 
+-------------------------------------
+
+ li:nth-child >순서 
+
+  li:nth-child(2n+1) >홀수만 잡는다 
+ li:nth-child(2n+2) > 짝수만 잡는다 
+li:nth-child(odd) > 홀수 ( odd) 아드 = (2n+1)
+li:nth-child(even)> 짝수 ( even) = (2n+2) 
+n값은 0부터 시작한다.
+(프로그래밍에서는 모두 그렇다.)
+
+
+      ★  p::before {
+            content:"앞에 글을 씁니다.";
+            display: block;
+            clear: both;
+
+    ★     p:after {
+            content:"뒤에 글을 씁니다.";
+            display: block;
+            clear: both;
+
+before, after은 반드시 content 속성을 쓴다.
+
+원덱스 메뉴=라바메뉴
+한 태그에는 두개의 가상요소 가능
+
+       ★  content:"";
+            display: block;
+            clear: both;
+
+  이 세가지가 합쳐지면서 가상요소를 만든다.
+
+아이디 : #으로 표현
+하나의 아이디는 한 부분에만 사용가능하다 
+
+
+<div class="container"></div> 가운데 정렬 
+
+    .cls001 {
+            width: 150px;
+            height: 150px;
+            
+        }
+
+        #box1 {
+            background: black;
+        }
+
+        #box2 {
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1" class="cls001"></div>
+    <div id="box2" class="cls001"></div>
+    <div id="box3" class="cls001"></div>
+    <div id="box4" class="cls001"></div>
+    <div id="box5" class="cls001"></div>
+
+클래스를 안주면 id를 잡고   
+width: 150px; height: 150px; 각각 다 줘야 되기 때문에 코드낭비
+
+스타일 시트의 위치값에 따른 종류
+
+0. !important 1위 
+1.인라인 스타일 시트 2위
+2.내부 스타일 시트 3위
+3.외부 스타일 시트 4위 
+ 
+
+★외부 스타일 적는 방법★ 복습 꼭 하기
+<link rel="stylesheet" href="style.css"> 
+@charset "UTF-8"; 
+내부가 먼저 먹는다. 
+
+내부, 외부 모두  !important;를 쓰면 가장 먼저 우선순위를 차지하게 됨.
+
+<h1 style="font-size: 250px;"> 인라인 스타일에 폰트 지정하는 거..
+빠르게 적용하려고 할 때 인라인 스타일 시트를 사용.
+일반적으로 외부 스타일 시트로 사용함.
+
+ .cls001 > li {    >>자식 선택자 
+밑에 있는 자식을 선택하기 위해.
+리스트 스타일은 여기에 주지 않는다. 
+
+
+            height: 30px;
+            line-height: 30px;
+이렇게 실무에서 많이 함. 수직에서의 정렬 가운데값.
+서로 값을 똑같이 줌.
+
+    .cls001 li ul { 자식이 없을땐 >마크업을 쓰지 않는다.
+
+
+★메뉴 만들기 코딩★
+    <style>
+        .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 > li {
+            width: 150px;
+            float: left;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            background: #ddd;
+        }
+
+        .cls001 li ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cls001 li ul li {
+            width: 150px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            background: #ccc;
+            border-bottom: 1px solid black;
+            display: none;
+        }
+
+        .cls001 li:hover ul li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML
+            <ul>
+                <li>스타일</li>
+                <li>웹표준</li>
+                <li>마크업</li>
+            </ul>
+        </li>
+    </ul>    
+</body>
+</html>
+
+
+
+   .cls001 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+ul 에만     
+list-style: none; 주고 
+margin: 0;
+padding: 0; 공간이 벌어지기 떄문에 줌. 
+
+
+  transition: 0.6s; 은 호버 전단계에서 주어야함 ★ 또 강조 
+

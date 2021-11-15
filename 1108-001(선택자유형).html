@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADAR</title>
+    <style>
+        #first ~ li {
+            color: red;
+        }
+
+        #forth + li {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="first">1
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>2</li>
+        <li>3</li>
+        <li id="forth">4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

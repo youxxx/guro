@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS LAVA MENU</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            font-family: "Arial", 돋움, 돋움체;
+        }
+
+        .nav {
+            position: relative;
+            margin: 50px 0px;
+            width: 700px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .nav a {
+            display: block;
+            float: left;
+            width: 20%;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+            transition: 0.4s;
+            padding: 16px 0px 38px 0;
+        }
+
+        .nav a:hover {
+            color: #8ac007;
+    
+        }
+
+        .nav .effect {
+            /* 형제요소를 알아야함,포지션 개념을 알아야함, 마진을 왼쪽을
+            -35반 줘야하는 개념을 알아야 함. */
+            position: absolute;
+            bottom: 20px; 
+            width: 70px;
+            margin-left: -35px;
+            height: 2px;
+            background: #8ac007;
+            left: -20%;
+            transition: 0.8s;
+        }
+
+        .nav a:nth-child(1):hover ~ .effect {
+            left: 10%;
+        }
+
+        .nav a:nth-child(2):hover ~ .effect {
+            left: 30%;
+        }
+
+        .nav a:nth-child(3):hover ~ .effect {
+            left: 50%;    
+        }
+
+        .nav a:nth-child(4):hover ~ .effect {
+            left: 70%;    
+        }
+
+        .nav a:nth-child(5):hover ~ .effect {
+            left: 90%;    
+        }
+
+    </style>
+</head>
+<body>
+        <div class="nav">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+            <a href="#">Portfolio</a>
+            <a href="#">JQuery</a>
+            <div class="effect"></div>
+            <!-- 꼭 effect을 이 안에 넣어야 함. -->
+        </div>
+    </div>
+</body>
+</html>

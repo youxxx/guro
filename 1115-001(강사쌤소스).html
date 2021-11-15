@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            width: 85%;
+            margin: 0 auto;
+            background: dodgerblue;
+            padding: 15px;
+            height: 80px;
+            box-sizing: border-box;
+        }
+        
+        .cls002{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            /* width: 120px; */
+            margin-right: 50px;
+        }
+
+        nav {
+            float:right;
+        }
+
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        article {
+            width: 85%;
+            margin: 0 auto;
+            border: 5px solid  black;
+            overflow: hidden;
+            /* box-sizing: border-box; */
+        }
+
+        section {
+            width: 380px;
+            border: 1px dotted black;
+            padding: 15px;
+            margin: 20px;
+            float: left;
+            height: 580px;
+        }
+
+        aside {
+            /* clear: both; */
+            width: 85%;
+            margin: 0 auto;
+            height: 250px;
+            background: #8ac007;
+            padding: 20px;
+            /* box-sizing: border-box; */
+        }
+
+        /* .cls001 > li {
+            display: block
+        } */
+
+        footer {
+            padding-top: 50px;
+            box-sizing: border-box;
+            /* clear: both; */
+            height: 110px;
+            width: 85%;
+            background: black;
+            margin: 0 auto;
+            color: white;
+            
+        }
+
+        address {
+            font-style: normal;
+            text-align: center;
+        }
+
+        .cls001 > li {
+            /* display: block; */
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="cls002">
+                <li><a href="#">애완견</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">더불어살기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <!-- 저작권이 없다 -->
+        <h1>애완견 종류</h1>
+        <section>
+            <!-- 저작권이 있다 -->
+            <h2>활달한 강아지</h2>
+            <dl>
+                <dt>요크셔 테리어</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores. Architecto officiis sed sequi adipisci debitis totam repudiandae harum, porro nemo nihil aperiam consequuntur similique corporis praesentium aspernatur.</dd>
+                <dt>말티즈</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+                <dt>포메라이언</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+                <dt>골든리트리버</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>온순한 강아지</h2>
+            <dl>
+                <dt>쉬즈</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores. Architecto officiis sed sequi adipisci debitis totam repudiandae harum, porro nemo nihil aperiam consequuntur similique corporis praesentium aspernatur.</dd>
+                <dt>퍼그</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+                <dt>래브라도 리트리버</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>사납지만 복종적인 강아지</h2>
+            <dl>
+                <dt>미니어쳐핀셔</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores. Architecto officiis sed sequi adipisci debitis totam repudiandae harum, porro nemo nihil aperiam consequuntur similique corporis praesentium aspernatur.</dd>
+                <dt>푸들</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+                <dt>폭스테리어</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+                <dt>골든리트리버</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus maiores.</dd>
+            </dl>
+        </section>
+        </article>
+        <aside>
+            <h3>건강한 강아지는</h3>
+            <ul class="cls001">
+                <li>코가 젖어있고 눈꼽이 없어야 합니다.</li>
+                <li>털에 윤기가 있는 것을 골라야 합니다.</li>
+                <li>입에서 고약한 냄새가 나면 병이 있다는 증거입니다.</li>
+                <li>가장 활발하게 움직이는 녀석을 고르는게 좋습니다.</li>
+                <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li>
+            </ul>
+        </aside>
+        <footer>
+            <address>Copyright The JOEN</address>
+        </footer>
+    
+</body>
+</html>

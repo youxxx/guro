@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 85%;
+            margin: 0 auto;
+            background: rgb(92, 148, 185);
+            padding: 15px;
+            height: 80px;
+            box-sizing: border-box;
+        }
+
+        .cls002 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            width: 120px;
+        }
+
+        nav {
+            float: right;
+        }
+
+        a:link, a:visited {
+            color: floralwhite;
+            text-decoration: none;
+        }
+
+        article {
+            width: 100%;
+            margin: 0 auto;
+            border: 5px solid black;
+            
+        }
+
+        section {
+            width: 380px;
+            border: 1px dotted black;
+            padding: 15px;
+            margin: 20px;
+            float: left;
+            height: 580px;
+        }
+
+        aside {
+            clear: both;
+            width: 85%;
+            margin: 0 auto;
+            height: 250px;
+            background: rgb(124, 142, 0);
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+
+        /* .cls001 > li {
+            display: block;
+        } */
+
+        footer {
+            clear: both;
+            height: 110px;
+            box-sizing: border-box;
+            width: 85%;
+            margin: 0 auto;
+            padding-top: 50px;
+            background: black;
+        }
+
+        address {
+            font-style: normal;
+            text-align: center;
+        }
+
+        .cls001 > li {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="cls002">
+                <li><a href="#">애완견</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">더불어살기</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- 저작권이 없다 -->
+        <h1>애완견 종류</h1>
+        <section>
+            <!-- 저작권이 없다 -->
+            <h2>활달한 강아지</h2>
+            <dl>
+                <dt>요크셔테리어</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. Vel expedita laboriosam error impedit quae nobis aut quisquam aspernatur iure.</dd>
+                <dt>말티드</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+                <dt>포메라이언</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+                <dt>골든리트리버</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+            </dl>
+        </section>
+        <section>
+            <h2>온순한 강아지</h2>
+            <dl>
+                <dt>쉬즈</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. Vel expedita laboriosam error impedit quae nobis aut quisquam aspernatur iure.</dd>
+                <dt>퍼그</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+                <dt>레브라도 리트리버</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+            </dl>
+        </section>
+        </article>
+        <section>
+            <h2>사납지만 복종적인 강아지</h2>
+            <dl>
+                <dt>미니어쳐핀셔</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. Vel expedita laboriosam error impedit quae nobis aut quisquam aspernatur iure.</dd>
+                <dt>푸들</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+                <dt>폭스테리어</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, aut. Sed facilis minima quos corrupti pariatur esse sunt aspernatur. </dd>
+            </dl>
+        </section>
+        <article> 
+        <aside>
+            <h3>건강한 강아지는</h3>
+            <ul class="cls001">
+                <li>코가 젖어있고 눈꼽이 없어야 합니다.</li>
+                <li>털에 윤기가 있는 것을 골라야 합니다.</li>
+                <li>입에서 고약한 냄새가 나면 병이 있단는 증거입니다.</li>
+                <li>가장 활발하게 움직이는 녀석을 고르는게 좋습니다.</li>
+                <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li>
+            </ul>
+        </aside>
+        <footer>
+            <address>Copyright the JOEN</address>
+        </footer>
+</body>
+</html>

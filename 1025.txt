@@ -1,0 +1,206 @@
+1025
+
+1.포지션
+2.디스플레이 
+3.float
+4.가상요소 
+
+레이아웃
+
+1.static : Default 값... 좌표값을 줄 수 없습니다. float 으로만 위치값을 
+가질 수 있다. (거의 안씀)
+2.relative값을 가진 박스 2개가 있다면 이전 박스를 기준으로 다음 박스가 
+위치값을 가진다. float을 주었을 때만
+3.realtive(fixed)와 absolute값이 같이 쓰였을 때
+4.fixed 좌표값을 가진다.
+
+3번의 absolute와 4번은 브라우저를 기준값으로 가진다. 
+단 fixed는 고정 되어져서 스크롤이 일어나도 움직이지 않는
+
+유튜브 퍼가기 > 주소 따서 body에 넣으면 재생가능.
+
+<body>
+    <video src="[MV] Taylor Swift-Shake It Off.mp4" autoplay muted controls loop width="400" height="200"></video>
+</body>
+</html>
+autoplay는 muted가 있어야 함.
+loop 무한반복 
+controls 재생/멈춤 버튼 
+
+<span></span> 인라인 스타일 
+
+
+
+
+     body {
+            margin: 100px;
+        }
+        span {
+            /* 인라인태그 */
+            display: block;
+            width: 500px;
+            height: 200px;
+            padding: 50px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            margin: 100px;
+
+ border-width: 10px; 두께
+margin: 100px; 바깥쪽으로의 여백 / 좌우만 먹는다. 인라인의 특성. 
+마진의 중첩현상.  100px씩 먹어야하는데 브라우저의 오류.
+
+★
+인라인은 패딩값을 가지며 보더를 가지며 좌우 마진을 가질 수 있다. (상하 x)
+블락은 width height 마진 패딩 보더 모두 가질 수 있다.
+인라인 블락: 블락이면서 한줄에 표현이 가능한 디스플레이의 종류 
+★
+
+  border: 50px solid red; 실무에서는 한줄로 간단히 씀
+
+ z-index는 포지션과 같이 써야 제대로 적용됨
+숫자가 클수록 제일 위로 감.
+
+뭔가 가려져서 안 보이면 포지션 픽스를 주면 젤 위로 올라온다. tip★
+
+display: none;   > 자리 차지하지 않고 생략됨 
+ visibility: hidden; > 자리를 차지 않고 그 자리만 안 보임
+opacity   > 자리를 차지 않고 그 자리만 안 보임
+
+img 태그는 인라인 블락임. 
+기존 인라인은 width, height가 적용되지 않지만 img는 다름.
+input 도 동일함. 
+
+
+background: linear-gradient(to top, red, yellow);  >선형 
+그라데이션..
+(to top, green 30%, yellow 이렇게 상세값도 가능.
+
+45deg 각도 약자 
+background: radial-gradient(red, green 30%, yellow);  >원형
+background: radial-gradient(ellipse, red, green 30%, yellow); 원형을 찌그러드리기
+background: repeating-linear-gradient(20px yellow, 40px red);
+
+
+1. 트랜스폼
+2. 트랜지션
+3. 애니메이션
+
+  div {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition: 0.6s;
+
+div:hover { 
+
+트렌지션은 호버 전에 줘야 함. 안 그럼 에러남. 
+
+transform: scale(1.5);
+transform: rotate(-750deg);
+transform: skew(45deg);
+transform: translate(120px); > x축 이동하기
+
+
+
+  animation-name: ani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;  > 똑같은 속도로 움직인다.
+       }
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 오디오</title>
+    <style>
+       div {
+            width: 70px;
+            height: 70px;
+            background: red;
+            animation-name: ani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+       }
+
+       @keyframes ani {
+           0% {
+               position: absolute;
+               top: 50px;
+               left: 50px;
+           }
+       }
+
+       25% {
+           position: absolute;
+           top: 500px;
+           left: 500px;
+       }
+
+       50% {
+            position: absolute;
+            top: 500px;
+            left: 500px;
+       }
+
+       75% {
+            position: absolute;
+            top: 500px;
+            left: 50px;
+       }
+
+       100% {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+       }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+
+0    >
+100  > 
+
+   animation-name: ani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+이걸 한줄로 깔끔이 적음 
+
+
+웹에이전시 윈도우 11 익스플로러 삭제 
+
+최신모던 브라우저
+모던브라우저
+구형브라우저
+
+크로스 브라우징
+
+-webkit-linear-gradien:(to top, red, yellow)  > 이렇게 하면 모던 브라우저에도 먹힘       
+                             크롬 사파리
+linear-gradient:(to top, red, yellow)
+
+-moz- 모질라 파이어 폭스
+
+-o- 오페라 
+
+-ms- 인터넷 익스플로러 
+
+
+

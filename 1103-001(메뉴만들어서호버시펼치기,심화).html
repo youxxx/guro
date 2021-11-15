@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+       .cls001 {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+       }
+
+       .cls001 > li {
+           text-align: center;
+           width: 150px;
+           height: 40px;
+           line-height: 40px;
+           background: pink;
+           border: 1px solid black;
+       }
+
+       .cls001 li ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+       }
+
+       .cls001 li ul li {
+           width: 150px;
+           height: 40px;
+           font-size: 0;
+           opacity: 0;
+           line-height: 40px;
+           background: pink;
+           border: 1px solid black;
+           transition: 0.8s;
+        }
+
+       .cls001 li:hover ul li {
+           width: 150px;
+           height: 40px;
+           font-size: 14px;
+           opacity: 1;
+           line-height: 40px;
+           background: pink;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML5
+            <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>JQuery</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+<!-- 크기의 변화가 생기는 경우  transition이 적용 가능하다 -->

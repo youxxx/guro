@@ -1,0 +1,47 @@
+
+CDN (CONTENT DELIVERY NETWORK)
+
+emmet : 자동완성기능
+
+bullet  
+
+<ul type="square">
+<ul type="circle">
+<ol type="i"> 로마숫자
+
+<ol type="1" reversed> 
+"1" re 사이에 띄어쓰기 
+붙여서 써도 에러는 나지 않지만
+협업시 반드시 한다
+
+    <a href="http://www.apple.com" target="_self">애플홈으로 가기</a> 현재창에서 열기
+
+img 를쓰면 반드시 alt 같이 쓴다 
+
+UPS 무정전 전원 공급장치 
+
+youxx.dothome.co.kr 
+ftp아이디 youxx 비번 dudrn!044875
+
+FTP (File Transfer Protocol) : 파일전송프로토콜 
+
+a태그는 인라인 개념의 태그입니다 
+Hn태그는 블락개념의 태그입니다.
+
+★웹표준★
+1. 인라인개념의 태그는 인라인으로 감쌀 수 있다.
+2. 인라인개념의 태그는 블락개념의 태그를 감쌀 수 없다. 
+3. 블락개념의 태그는 인라인 개념의 태그를 감쌀 수 있다. 
+4. 블락개념의 태그는 블락 개념의 태그를 감쌀 수 있다.
+<li><a> </a></li>
+
+# 아이디, 누구에게 링크를 걸건지 
+
+<form>
+ 서버로 전송되어지는 부분의 태그는 
+</form>
+
+ctrol+shi+p > 영문/한글 바꾸기 
+
+        아이디: <input type="text"><br>
+        패스워드: <input type="password">
